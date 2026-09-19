@@ -10,5 +10,6 @@ Using the `airway` dataset (steroid-treated vs. untreated lung tissue, 8 samples
   - A row-scaled **heatmap** of top significant genes, with samples automatically clustering into their correct treatment groups based purely on expression patterns.
   - A **volcano plot** highlighting which genes are both statistically significant and biologically meaningful.
 
-## What's next
-Adding GO/KEGG enrichment analysis to figure out *what these genes are actually doing* biologically, not just that they changed.
+## Gene Set Enrichment Analysis
+Ran KEGG pathway enrichment (`clusterProfiler`) on the significant gene list. The top-30 gene list showed no significant pathways because of small sample. The full significant gene list (2,694 genes) showed strong enrichment, with **Focal adhesion** as the top hit (69 genes, adjusted p-value ≈ 8.3 × 10⁻¹³), consistent with steroid treatment's known effects on cell structure and inflammation signaling.
+
