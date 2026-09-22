@@ -13,3 +13,6 @@ Using the `airway` dataset (steroid-treated vs. untreated lung tissue, 8 samples
 ## Gene Set Enrichment Analysis
 Ran KEGG pathway enrichment (`clusterProfiler`) on the significant gene list. The top-30 gene list showed no significant pathways because of small sample. The full significant gene list (2,694 genes) showed strong enrichment, with **Focal adhesion** as the top hit (69 genes, adjusted p-value ≈ 8.3 × 10⁻¹³), consistent with steroid treatment's known effects on cell structure and inflammation signaling.
 
+## Go Term Enrichment
+Ran GO enrichment analysis (Biological Process category) alongside KEGG. Results converge on the same biological theme — extracellular matrix organization, actin filament organization, and connective tissue development, matching KEGG's top hit (Focal adhesion). This agreement across two independent methods strengthens confidence in the finding, consistent with steroids' known role in cell adhesion and ECM remodeling.
+
